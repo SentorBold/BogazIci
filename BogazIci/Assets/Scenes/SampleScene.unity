@@ -265,7 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab9d597edfa053941ab78a53f7991780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  denemeler: 31
+  denemeler: "32 haramd\u0131r"
 --- !u!4 &611732316
 Transform:
   m_ObjectHideFlags: 0
