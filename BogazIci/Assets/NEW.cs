@@ -15,5 +15,6 @@ public class NEW : MonoBehaviour
     void Update()
     {
         Debug.Log(denemeler);
+        print("x");
     }
 }
