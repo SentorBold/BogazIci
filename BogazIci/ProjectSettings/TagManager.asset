@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Sebze
+  - Sos
+  - Et
+  - Baharatlar
+  - "Hamur i\u015F"
+  - "\u0130\u011Fren\xE7"
+  - "K\u0131zartmalar"
   layers:
   - Default
   - TransparentFX
