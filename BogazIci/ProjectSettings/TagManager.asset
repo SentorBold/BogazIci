@@ -4,14 +4,44 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Sebze
-  - Sos
+  - Domates
+  - Havuc
+  - Makarna
+  - Tursu
+  - Elma
+  - Armut
+  - Mantar
+  - Limon
+  - Biber
+  - Tuz
+  - Ketcap
+  - Mayonez
+  - Kolonya
+  - Ekmek
+  - Cig kofte
+  - Aci sos
+  - Salatalik
   - Et
-  - Baharatlar
-  - "Hamur i\u015F"
-  - "\u0130\u011Fren\xE7"
-  - "K\u0131zartmalar"
-  - "F\u0131r\u0131n"
+  - Olu et
+  - Kan
+  - Balik
+  - Beyin
+  - Yarasa
+  - Zeytinyagi
+  - Yumurta
+  - Cheddar
+  - Nutella
+  - Kekik
+  - Tozbiber
+  - Pul biber
+  - Zerdecal
+  - Zencefil
+  - Tarcin
+  - Karabiber
+  - Kimyon
+  - Barbeku sos
+  - Kuru nane
+  - Patlican
   layers:
   - Default
   - TransparentFX
