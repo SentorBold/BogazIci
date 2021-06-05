@@ -45,6 +45,7 @@ public class ChoosinFood : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         Debug.Log(choose);
         if (choose < 1)
         {
