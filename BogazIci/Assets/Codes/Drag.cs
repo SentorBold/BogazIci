@@ -5,13 +5,13 @@ using UnityEngine.EventSystems;
 
 public class Drag : MonoBehaviour, IPointerDownHandler, IBeginDragHandler , IEndDragHandler, IDragHandler
 {
-    [SerializeField] private Canvas canvas;
+    
 
-    private RectTransform rectTransform;
+    private Transform transform;
 
     private void Awake()
     {
-        rectTransform = GetComponent<RectTransform>();
+        transform = GetComponent<Transform>();
     }
     public void OnBeginDrag(PointerEventData evenData)
     {
@@ -20,7 +20,7 @@ public class Drag : MonoBehaviour, IPointerDownHandler, IBeginDragHandler , IEnd
     public void OnDrag(PointerEventData evenData)
     {
         print("OnDrag");
-        rectTransform.anchoredPosition += evenData.delta / canvas.scaleFactor;
+        transform.position += (Vector3)evenData.delta; // canvas.scaleFactor;
     }
     public void OnEndDrag(PointerEventData evenData)
     {
