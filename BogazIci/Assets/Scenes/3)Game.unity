@@ -254,7 +254,7 @@ RectTransform:
   m_GameObject: {fileID: 568734984}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7625, y: 1, z: 1}
   m_Children:
   - {fileID: 844906013}
   m_Father: {fileID: 1199708307}
@@ -390,7 +390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf47d7ff144954db78cce2dc722599bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sens: 0.01
+  sens: 0.009
 --- !u!58 &791968520
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -568,7 +568,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1026985581
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1028,13 +1028,17 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5944601470509172470, guid: 482994987452f5c448c4aee82f0f77f0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7265247694494847802, guid: 482994987452f5c448c4aee82f0f77f0, type: 3}
       propertyPath: m_Name
       value: PauseMenuUI
       objectReference: {fileID: 0}
     - target: {fileID: 7265247694494847802, guid: 482994987452f5c448c4aee82f0f77f0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7265247694494847806, guid: 482994987452f5c448c4aee82f0f77f0, type: 3}
       propertyPath: m_Pivot.x
