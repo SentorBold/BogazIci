@@ -1,34 +1,41 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class ScreenShot : MonoBehaviour
 {
+
     public RawImage SS;
-    // Start is called before the first frame update
- public void ss()
-    {
-        int randomNumber = Random.Range(0,10000);
-        string filePath = "Assets/" + "SS" + randomNumber + ".png";
-        ScreenCapture.CaptureScreenshot(filePath);
-        SS.texture = LoadPNG(filePath);
+   
+   public GameObject finalScreenShot;
 
+
+    private IEnumerator takeScreenshot()
+    {
+        ScreenCapture.CaptureScreenshot("karilarbanahayran.png", 0);
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForSecondsRealtime(1.5f);
+        GetPhoto();
+
+        StartCoroutine(takeScreenshot());
     }
-
-    private static Texture2D LoadPNG(string filePath)
+    public void GetPhoto()
     {
-       
-        Texture2D tex = null;
-        byte[] fileData;
-
-        if (System.IO.File.Exists(filePath))
+    string url  = Application.persistentDataPath + "/" + "karilarbanahayran.png";
+        var bytes = File.ReadAllBytes(url);
+        Texture2D texture = new Texture2D(2, 2);
+        bool imageLoadSuccess = texture.LoadImage(bytes);
+        while (!imageLoadSuccess)
         {
-            fileData = System.IO.File.ReadAllBytes(filePath);
-            tex = new Texture2D(2, 2);
-            tex.LoadImage(fileData); //..this will auto-resize the texture dimensions.
+            print("image load failed");
+            bytes = File.ReadAllBytes(url);
+            imageLoadSuccess = texture.LoadImage(bytes);
         }
-        return tex;
+        print("Image load success: " + imageLoadSuccess);
+        finalScreenShot.GetComponent<Image>().overrideSprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0f, 0f), 100f);
     }
-
 }
+
