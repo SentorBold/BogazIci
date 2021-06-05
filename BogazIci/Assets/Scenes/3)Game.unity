@@ -290,8 +290,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1801160263}
-        m_TargetAssemblyTypeName: SS1, Assembly-CSharp
-        m_MethodName: SS
+        m_TargetAssemblyTypeName: ScreenShot, Assembly-CSharp
+        m_MethodName: ss
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -356,7 +356,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &644258924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -896,7 +896,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1551464035
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1062,10 +1062,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1801160262}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08ab026b9fb50494894f8f56a3aec006, type: 3}
+  m_Script: {fileID: 11500000, guid: a9df06b63ce7643ed972ae274e647694, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ss: {fileID: 0}
+  SS: {fileID: 644258924}
 --- !u!4 &1801160264
 Transform:
   m_ObjectHideFlags: 0
