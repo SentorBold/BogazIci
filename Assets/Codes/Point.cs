@@ -15,4 +15,11 @@ public class Point : MonoBehaviour
     {
         
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (gameObject.layer.Equals("Guzel"))
+        {
+            print("x");
+        }
+    }  
 }

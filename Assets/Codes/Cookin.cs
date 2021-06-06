@@ -4,15 +4,36 @@ using UnityEngine;
 
 public class Cookin : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D other)
+    public Sprite PismisElma;
+    public Sprite PismisEkmek;
+    public Sprite PismisSalatalık;
+    public Sprite PismisEt;
+    public Sprite PismisPatlican;
+    public Sprite PismisMantar;
+    public Sprite PismisBeyin;
+
+
+    public SpriteRenderer Elma;
+    public SpriteRenderer Ekmek;
+    public SpriteRenderer Salatalık;
+    public SpriteRenderer Et;
+    public SpriteRenderer Patlican;
+    public SpriteRenderer Mantar;
+    public SpriteRenderer Beyin;
+
+
+   
+private void OnTriggerEnter2D(Collider2D other)
     {
+        print("x");
         if (other.CompareTag("Domates"))
-        { 
+        {
             Debug.Log("Pis");
         }
 
         if (other.CompareTag("Patlican"))
         {
+            Patlican.sprite = PismisPatlican;
             Debug.Log("Pis");
         }
         if (other.CompareTag("Havuc"))
@@ -29,6 +50,7 @@ public class Cookin : MonoBehaviour
         }
         if (other.CompareTag("Elma"))
         {
+            Elma.sprite = PismisElma;
             Debug.Log("Pis");
         }
         if (other.CompareTag("Armut"))
@@ -37,6 +59,7 @@ public class Cookin : MonoBehaviour
         }
         if (other.CompareTag("Mantar"))
         {
+            Mantar.sprite = PismisMantar;
             Debug.Log("Pis");
         }
         if (other.CompareTag("Limon"))
@@ -65,6 +88,7 @@ public class Cookin : MonoBehaviour
         }
         if (other.CompareTag("Ekmek"))
         {
+            Ekmek.sprite = PismisEkmek;
             Debug.Log("Pis");
         }
         if (other.CompareTag("Cig kofte"))
@@ -77,10 +101,12 @@ public class Cookin : MonoBehaviour
         }
         if (other.CompareTag("Salatalik"))
         {
+            Salatalık.sprite = PismisSalatalık;
             Debug.Log("Pis");
         }
         if (other.CompareTag("Et"))
         {
+            Et.sprite = PismisEt;
             Debug.Log("Pis");
         }
         if (other.CompareTag("Olu et"))
@@ -97,6 +123,7 @@ public class Cookin : MonoBehaviour
         }
         if (other.CompareTag("Beyin"))
         {
+            Beyin.sprite = PismisBeyin;
             Debug.Log("Pis");
         }
         if (other.CompareTag("Yarasa"))
@@ -160,5 +187,4 @@ public class Cookin : MonoBehaviour
             Debug.Log("Pis");
         }
     }
-        
 }
