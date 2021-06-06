@@ -14,4 +14,8 @@ public class NextGoBack : MonoBehaviour
         //i want to be a monkey
         SceneManager.LoadScene(0);
     }
+    public void Reset()
+    {
+        SceneManager.LoadScene(1);
+    }
 }
