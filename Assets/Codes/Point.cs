@@ -14,16 +14,16 @@ public class Point : MonoBehaviour
         if (gameObject.tag.Equals("Yarasa"))
         {
 
-            max.enabled = true;
+            max.gameObject.SetActive(true);
 
           }
        else if (gameObject.tag.Equals("Beyin"))
         {
-            max.enabled = true;
+            max.gameObject.SetActive(true);
         }
         else
         {
-            min.enabled = true;
+            min.gameObject.SetActive(true);
 
 
         }
